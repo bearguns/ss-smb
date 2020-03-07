@@ -1,0 +1,32 @@
+h1,h2,h3,h4,h5,h6,.title {
+    font-family: 'IBM Plex Mono';
+    font-weight: 500;
+}
+
+p,span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+strong {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.title.header__title {
+    margin-bottom: 8px;
+}
+
+.subtitle.section-title {
+    margin-bottom: 8px;
+}
+
+ul {
+    padding-left: 11px;
+    list-style: square;
+    font-size: 11px;
+}
+
+  .hidden {
+      display: none;
+  }
