@@ -1,7 +1,7 @@
 <ul class="resume-contact">
-  <li class="resume-contact__info">303.910.6963</li>
-  <li class="resume-contact__info">iamseanbrage@gmail.com</li>
-  <li class="resume-contact__info">Denver, CO</li>
+  <li class="resume-contact__info is-size-6">303.910.6963</li>
+  <li class="resume-contact__info is-size-6">iamseanbrage@gmail.com</li>
+  <li class="resume-contact__info is-size-6">Denver, CO</li>
 </ul>
 
 <style>

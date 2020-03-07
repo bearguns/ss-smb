@@ -1,16 +1,15 @@
 <script>
-  import { onMount } from 'svelte';
-  import { hideSidebar } from '../stores.js';
   import ResumeHeader from '../components/resume/ResumeHeader.svelte';
   import ResumeSkills from '../components/resume/ResumeSkills.svelte';
   import ResumeWork from '../components/resume/ResumeWork.svelte';
   import ResumeEducation from '../components/resume/ResumeEducation.svelte';
-  onMount(() => hideSidebar.update(value => false));
+  import { hideSidebar } from '../stores.js';
+  import { onMount } from 'svelte';
+
+  onMount(async () => {
+      await hideSidebar.update(value => true);
+  });
 </script>
-
-<style>
-
-</style>
 
 <svelte:head>
 	<title>Resume | Sean M Brage</title>
@@ -28,7 +27,7 @@
     <ResumeWork />
   </div>
   <div class="column">
-    <ResumeEducation />      
+    <ResumeEducation />
   </div>
 </div>
 </div>

@@ -17,13 +17,17 @@
 	  'Linux',
 	  'Heroku',
 	  'Express',
+	  'NodeJS',
 	  'Flask',
+	  'Django'
       ]
   };
   let softSkills = [
-      'Written & Verbal Communication',
-      'Public Speaking & Product Demos',
-      'Customer Focus',
+      'Learning on the fly',
+      'Written & verbal communication',
+      'Public speaking',
+      'Internal training & knowledge transfer',
+      'Customer focus',
   ];
 </script>
 
@@ -31,23 +35,12 @@
   .resume-skills {
       border-bottom: 1px solid black;
   }
-  .resume-skills__category {
-      text-transform: uppercase;
-  }
-
-  .resume-skills__list {
-      font-size: 12px;
-  }
-
-  .resume-skills__title {
-      margin-bottom: 8px;
-  }
 </style>
 
-<h1 class="subtitle section-title">RELEVANT SKILLS</h1>
+<h1 class="section-title">RELEVANT SKILLS</h1>
 <div class="columns resume-skills">
   <div class="column is-two-thirds">
-    <h2>TECH SKILLS</h2>
+    <h2 class="is-size-7">TECH SKILLS</h2>
     <div class="columns">
       {#each Object.keys(techSkills) as category}
       <div class="column is-one-quarter">
@@ -61,8 +54,8 @@
     </div>
   </div>
   <div class="column">
-    <h2>SOFT SKILLS</h2>
-    <ul class="resume-skills__list">
+    <h2 class="is-size-7">SOFT SKILLS</h2>
+    <ul>
       {#each softSkills as skill}
       <li>{skill}</li>
       {/each}

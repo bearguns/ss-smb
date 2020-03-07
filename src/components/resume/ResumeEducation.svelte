@@ -1,7 +1,24 @@
-<h2 class="subtitle section-title">EDUCATION</h2>
-<h3 class="is-size-6">Galvanize</h3>
-<h4 class="is-size-7">Web Development Intensive 2015-2016</h4>
+<script>
+  const education = [
+      {
+	  title: 'Web Development Intensive',
+	  school: 'Galvanize',
+	  time: '2015-2016',
+	  bullets: [
+	      'Graduated with certificate.',
+	      'Received strong recommendations from instructors and staff.',
+	  ]
+      }
+  ]
+</script>
+
+<h2 class="section-title is-size-6">EDUCATION</h2>
+{#each education as edu}
+<h3 class="is-size-6">{edu.school}</h3>
+<h4 class="is-size-7">{edu.title} {edu.time}</h4>
 <ul>
-  <li>Graduated with certificate.</li>
-  <li>Received strong recommendations from instructors and staff.</li>
+  {#each edu.bullets as bullet}
+  <li>{bullet}</li>
+  {/each}
 </ul>
+{/each}

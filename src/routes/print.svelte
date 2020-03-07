@@ -17,7 +17,7 @@
 </style>
 
 <svelte:head>
-	<Title>Resume | Sean M Brage</title>
+	<title>Resume | Sean M Brage</title>
 </svelte:head>
 
 <div class="container">

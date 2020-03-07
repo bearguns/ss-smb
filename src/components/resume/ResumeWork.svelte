@@ -37,20 +37,20 @@
 
 
 <style>
-  .resume-work__list {
-      font-size: 11px;
-      padding-left: 11px;
-      list-style: square;
+  .resume-work {
       margin-bottom: 11px;
   }
 </style>
-<h2 class="subtitle section-title">WORK HISTORY</h2>
+
+<h2 class="section-title is-size-6">WORK HISTORY</h2>
 {#each history as job}
-<h3 class="is-size-6">{job.title}</h3>
-<h3 class="is-size-7">{job.company} | {job.time}</h3>
-<ul class="resume-work__list">
-  {#each job.bullets as bullet}
-  <li>{bullet}</li>
-  {/each}
-</ul>
+<div class="resume-work">
+  <h3 class="is-size-6">{job.title}</h3>
+  <h3 class="is-size-7">{job.company} | {job.time}</h3>
+  <ul>
+    {#each job.bullets as bullet}
+    <li>{bullet}</li>
+    {/each}
+  </ul>
+</div>
 {/each}

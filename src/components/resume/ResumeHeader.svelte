@@ -10,7 +10,7 @@
 </style>
 
 <div class="columns resume-header">
-  <div class="column is-two-thirds">
+  <div class="column is-half">
     <ResumeTitle />
   </div>
   <div class="column">
