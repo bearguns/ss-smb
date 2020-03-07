@@ -1,0 +1,3 @@
+* SEANMBRAGEDOTCOM
+
+My resume/portfolio site written in Svelte + Sapper.
