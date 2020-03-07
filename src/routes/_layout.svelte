@@ -1,6 +1,5 @@
 <script>
   import '../../node_modules/bulma/css/bulma.css';
-  import '../../static/theme.css';
   import Nav from '../components/Nav.svelte';
   import { hideSidebar } from '../stores.js';
   export let segment;
