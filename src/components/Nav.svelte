@@ -54,7 +54,7 @@
     <h1 class="title">I'M SEAN BRAGE</h1>
     <ul>
       <li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>resume</a></li>
-      <li><a rel=prefetch aria-current='{segment === "print" ? "page" : undefined}' href='print'>print</a></li>
+      <!-- <li><a rel=prefetch aria-current='{segment === "print" ? "page" : undefined}' href='print'>print</a></li> -->
       <li><a href="resume.pdf">download</a></li>
     </ul>
   </nav>

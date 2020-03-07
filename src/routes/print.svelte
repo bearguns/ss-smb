@@ -6,9 +6,9 @@
   import { hideSidebar } from '../stores.js';
   import { onMount } from 'svelte';
 
-  onMount(async () => {
-      await hideSidebar.update(value => true);
-      window.print();
+  onMount(() => {
+      hideSidebar.update(value => true);
+      setTimeout(() => window.print(), 1500);
   });
 </script>
 
